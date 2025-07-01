@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudando</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudando Java Script</h1>
+    <script>
+        var nome = window.prompt('Qual seu nome?')
+        var idade = window.prompt('Qual sua idade?')
+        document.write(`seu nome é ${nome} sua idade é ${idade}</br>`)
+        document.write(`seu nome em maiusculo é ${nome.toUpperCase()}</br>`)
+        document.write(`seu nome em minusculo é ${nome.toLowerCase()} </br>`)
+        document.write(`seu nome tem ${nome.length} letras </br>`)
+        var n1 = Number (window.prompt('Digite um numero:'))
+        var n2 = Number (window.prompt('Digite outro numero:'))
+        var s = n1 + n2
+        document.write(`o resultado de ${n1} + ${n2} é ${s} </br>`)
+        var m = n1 - n2
+        document.write(`o resultado de ${n1} - ${n2} é ${m}`)
+    </script>
+</body>
+</html>
