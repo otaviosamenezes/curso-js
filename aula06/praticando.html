@@ -25,9 +25,16 @@
         var n1 = Number (window.prompt('Digite um numero:'))
         var n2 = Number (window.prompt('Digite outro numero:'))
         var s = n1 + n2
-        document.write(`o resultado de ${n1} + ${n2} é ${s} </br>`) 
+        document.write(`o resultado de ${n1} + ${n2} = ${s} </br>`) 
         var m = n1 - n2
-        document.write(`o resultado de ${n1} - ${n2} é ${m}`)
+        document.write(`o resultado de ${n1} - ${n2} = ${m} </br>`)
+        var q = n1 * n2
+        document.write(`A multiplicação de ${n1} * ${n2} = ${q} </br>`)
+        var R = idade >= 18 ? 'MAIOR DE IDADE 😂':'MENOR DE IDADE 😭'
+        document.write(` você tem ${idade} e é ${R} </br>`)
+        var SR = window.prompt('quanto você recebe no mês?')
+        var salario = SR >= 1500.00 ?'parabens':'vai trabalha mas' 
+        document.write(`você recebe ${SR} ${salario} `)
     </script>
 </body>
 </html>
