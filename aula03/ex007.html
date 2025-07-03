@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Dom</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        input {
+            text-align: center;
+            font-weight: bolder;
+            width: 100px;
+            height: 20px;
+            font-size: 14px;
+        }
+        input#soma {
+            width: 98px;
+            height: 30px;
+            border-radius: 10px;
+        }
+        input#soma:hover {
+            background-color: chartreuse;
+        }
+        div {
+            background-color: rgb(205, 208, 208);
+            width: 107px;
+            margin-left: 136px;
+            margin-top: 10px;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+   <input type="text" name="Txtn1" id="Txtn1"> +
+   <input type="text" name="Txtn2" id="Txtn2">
+   <input type="button" value="somar" onclick="somar()" id="soma">
+   <div id="res">Resultado</div>
+   <script>
+     function somar() {
+        var tn1 = window.document.getElementById('Txtn1')
+        var tn2 = window.document.getElementById('Txtn2')
+
+        var n1 = Number(tn1.value)
+        var n2 = Number(tn2.value)
+    
+        var s = n1 + n2
+
+        var res = window.document.getElementById('res')
+        res.innerHTML = `${n1} + ${n2} = ${s}`
+     }
+   </script>
+</body>
