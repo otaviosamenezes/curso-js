@@ -22,25 +22,22 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()" onmouseenter="entra()" onmouseout="sair()">
+    <div id="area" onclick="clicar()" onmouseenter="entrou()" onmouseout="sair()">
         interaja...
     </div>
     <script>
-       function clicar() {
         var a = window.document.querySelector('div#area')
-        a.innerText = 'vamoo '
-        a.style.background = 'yellow'
-        a.style.color ='black'
+       function clicar() {
+        a.innerText = 'clicou'
+        a.style.background = 'green'
        }
-       function entra() {
-         var b = window.document.querySelector('div#area')
-          b.style.background = 'green'
-          b.innerText = 'ENTROU'
+       function entrou() {
+        a.innerText = 'entrou'
+        a.style.color = 'black'
        }
        function sair() {
-        var c = window.document.querySelector('div#area')
-         c.style.background = 'green'
-          c.innerText = 'SAIR'
+        a.innerText = "sair"
+        a.style.background = 'blue'
        }
     </script>
 </body>
