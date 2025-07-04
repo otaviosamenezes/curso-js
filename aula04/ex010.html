@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If ou Else</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+   <h1>sistema de multas</h1> 
+   Velocidade do carro: <input type="number" name="vel" id="vel"> Km/H
+  ➡️ <input type="button" value=" Verificar" onclick="clicar()">
+ <div id="res"> Resultado</div>
+  <script>
+   
+    function clicar() {
+         var Txtv = window.document.getElementById('vel')
+         var res = window.document.getElementById('res')
+         var velocidade = Number(Txtv.value)
+          res.innerHTML =`<p>Sua velocidade atual é de<strong> ${velocidade} Km/H</strong></p>`
+         if (velocidade > 60) {
+            res.innerHTML += `<p> Você está <strong>MULTADO</strong>.</p>`
+         }
+          res.innerHTML += ` <p>Dirija sempre com cinto segurança!</p>`
+    }
+        
+  </script>
+</body>
+</h
