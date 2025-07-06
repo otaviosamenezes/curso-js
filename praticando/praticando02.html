@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificando se Você é Brasileiro</h1>
+    Qual seu Paìs : <input type="text" name="Txtp" id="Txtp"> ➡️
+    <input type="button" value="Verificar" onclick="pais()">
+    <div id="pis">Verificando...</div>
+    <script>
+        function pais() {
+            var lpais = window.document.getElementById('Txtp')
+            var res = window.document.getElementById('pis')
+            var paisb = String(lpais.value)
+            
+            if (paisb == 'Brasil') {
+                res.innerHTML = '<p>Você é Brasileiro</p>'
+            }
+            else {
+                res.innerHTML = '<p>Você é Estrangeiro</p>'
+            }
+            if (paisb == 'Icatu') {
+                res.innerHTML = 'Você de Icatu/Maranhão, terra do rio'
+            }
+        }
+    </script>
+</body>
+</html>

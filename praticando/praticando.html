@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input#Txtn1, #Txtn2{
+            text-align: center;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Praticando as condições</h1>
+    <input type="text" name="Txtn1" id="Txtn1"> +
+    <input type="text" name="Txtn2" id="Txtn2"> 🟰
+    <input type="button" value="somar" onclick="clicar()">
+    <div id="res">Resultado</div>
+    <script>
+        function clicar() {
+            var ln1 = window.document.getElementById('Txtn1')
+            var ln2 = window.document.getElementById('Txtn2')
+            var n1 = Number(ln1.value)
+            var n2 = Number(ln2.value)
+            var s = n1 + n2
+            var res = window.document.getElementById('res')
+            res.innerHTML = `${n1} ➕ ${n2} 🟰 ${s}`
+        }
+    </script>
+</body>
+</html>
