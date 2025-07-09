@@ -1,0 +1,32 @@
+body {
+background-color: rgb(13, 93, 213);
+font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    text-align: center;
+    color: white;
+}
+section {
+background-color: white;
+border-radius: 10px;
+width: 500px;
+margin: auto;
+padding: 20px;
+height: 220px;
+}
+footer {
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
+#msg {
+    text-align: center;
+    padding-bottom: 15px;
+}
+#foto {
+    text-align: center;
+}
+#rs {
+    text-align: center;
+    font-size: 1.2em;
+}
