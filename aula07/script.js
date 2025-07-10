@@ -1,24 +1,53 @@
  
-function carregar() {
-    var msg = window.document.getElementById('msg')
-    var imgs = window.document.getElementById('imagem')
-    var re = window.document.getElementById('rs')
-    var data = new Date()
-    var hora = data.getHours()
-    msg.innerHTML = `são ${hora} horas`
-    if (hora <= 12) {
-        imgs.src = 'dia.png'
-        document.body.style.background = 'rgb(215, 190, 63)'
-        re.innerHTML = 'Bomdia!'
+function verificar() {
+ var data = new Date()
+ var ano = data.getFullYear()
+ var fano = window.document.getElementById('txtano')
+ var res = window.document.getElementById('res')
+
+ if (fano.value.length == 0 || fano.value > ano) {
+    window.alert('Verifique os dados e tente novamente!')
+ }
+ else {
+    var fsex = window.document.getElementsByName('radsex')
+    var idade = ano - Number(fano.value)
+    var genero = ''
+    var img = window.document.createElement('img')
+    img.setAttribute('id', 'foto')
+    if (fsex[0].checked) {
+        genero = 'Homem'
+        if (idade >=0 & idade < 10) {
+            img.setAttribute('src', 'bebeE.png')
+        }
+        else if ( idade < 21) {
+            img.setAttribute('src', 'jovemE.png')
+        }
+        else if (idade < 50) {
+            img.setAttribute('src', 'adultoE.png')
+        }
+        else {
+            img.setAttribute('src', 'velhooE.png')
+        }
     }
-    else if (hora <= 18) {
-        imgs.src = 'tarde.png'
-        document.body.style.background = 'rgb(199, 111, 61)'
-        re.innerHTML = 'Boa tarde!'
+    else if (fsex[1].checked) {
+        genero = 'Mulher'
+        if (idade >=0 & idade < 10) {
+            img.setAttribute('src', 'bebeAA.png')
+        }
+        else if ( idade < 21) {
+            img.setAttribute('src', 'jovemA.png')
+        }
+        else if (idade < 50) {
+            img.setAttribute('src', 'adultaA.png')
+        }
+        else {
+            img.setAttribute('src', 'velhaA.png')
+        }
     }
-    else if (hora <= 23) {
-        imgs.src = 'noite.png'
-        document.body.style.background = 'rgb(12, 24, 42)'
-        re.innerHTML = 'Boa noite!'
-    }
+    res.innerHTML = `Detectamos ${genero} com ${idade} anos`
+    res.appendChild(img)
+}
+
+
+
 }

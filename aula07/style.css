@@ -12,7 +12,6 @@ border-radius: 10px;
 width: 500px;
 margin: auto;
 padding: 20px;
-height: 220px;
 box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.393);
 }
 footer {
@@ -20,14 +19,6 @@ footer {
     color: white;
     font-style: italic;
 }
-#msg {
+#res {
     text-align: center;
-    padding-bottom: 15px;
-}
-#foto {
-    text-align: center;
-}
-#rs {
-    text-align: center;
-    font-size: 1.2em;
 }
