@@ -1,16 +1,18 @@
 function somar() {
     let numero = document.getElementById('txtano')
-    let res = document.getElementById('res')
-    let num = Number(numero.value)
-    res.innerHTML = ''
+    let tab = document.getElementById('selec')
     if (numero.value.length == 0) {
-      window.alert('porfavor digite um numero')  
+        window.alert('porfavo deigite o número')
     }
     else {
-       let i = 1
-        while (i <= 10) {
-            res.innerHTML += `${num} X ${i} = ${num * i}</br>`
-            i++
-        }
+       let n = Number(numero.value)
+       let c = 1
+       tab.innerHTML = ''
+       while (c <= 10) {
+       let item = document.createElement('option')
+        item.text = `${n} x ${c} = ${n*c}`
+       tab.appendChild(item)
+       c++
     }
+}
 }
