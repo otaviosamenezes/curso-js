@@ -1,24 +1,25 @@
 body {
-background-color: rgb(13, 93, 213);
 font-family: Arial, Helvetica, sans-serif;
+background-color: rgb(62, 62, 236);
 }
 header {
-    text-align: center;
-    color: white;
+text-align: center;
+color: white;
+font-style: italic;
 }
 section {
+text-align: center;
 background-color: white;
+padding: 10px;
 border-radius: 10px;
 width: 500px;
 margin: auto;
-padding: 20px;
-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.393);
 }
 footer {
-    text-align: center;
-    color: white;
-    font-style: italic;
+text-align: center;
+color: white;
+font-style: italic;
 }
 #res {
-    text-align: center;
+    font-style: italic;
 }

@@ -3,7 +3,7 @@ function carregar() {
     var img = document.getElementById('imagem')
     var resh  = document.getElementById('ress')
     var data = new Date()
-    var hora = 7
+    var hora = 12
     msg.innerHTML = `São ${hora} horas`
     if (hora == 0) {
          img.src = 'meianoiteee.png' 
