@@ -1,9 +1,10 @@
 function fatorial(n) {
-    if (n == 1) {
-        return 1
+    let fat = 1
+    let c = n
+    while (c > 1) {
+        fat = fat * c
+        c--
     }
-    else {
-        return n * fatorial(n-1)
-    }
+    return fat
 }
 console.log(fatorial(5))
