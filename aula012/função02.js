@@ -1,5 +1,4 @@
-function somar(n1=0, n2=0) {
+function somar(n1, n2) {
    return n1 + n2
 }
-let res = somar(6)
-console.log(res)
+console.log(somar(2, 4))

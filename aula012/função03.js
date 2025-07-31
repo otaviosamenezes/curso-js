@@ -1,4 +1,4 @@
 let v = function(x) {
-    return x*2
+    return x*3
 }
 console.log(v(5))
