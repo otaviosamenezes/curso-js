@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(67, 67, 242);
+}
+header {
+ text-align: center;
+ color: white;
+}
+section {
+    padding: 10px;
+    background-color: white;
+    width: 500px;
+    border-radius: 10px;
+    margin: auto;
+}
+footer {
+text-align: center;
+color: white;
+font-style: italic;
+}
+#flista {
+    width: 150px;
+}
